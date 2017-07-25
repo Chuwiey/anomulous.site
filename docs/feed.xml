@@ -4,10 +4,10 @@
     <title>Anomulous</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 23 Jul 2017 19:42:47 -0400</pubDate>
-    <lastBuildDate>Sun, 23 Jul 2017 19:42:47 -0400</lastBuildDate>
+    <link>http://www.chuwiey.com/</link>
+    <atom:link href="http://www.chuwiey.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 24 Jul 2017 21:36:03 -0400</pubDate>
+    <lastBuildDate>Mon, 24 Jul 2017 21:36:03 -0400</lastBuildDate>
     <generator>Jekyll v3.5.1</generator>
     
       <item>
@@ -37,8 +37,8 @@
 &lt;p&gt;Dolorem laudantium possimus esse tenetur voluptates nam. corrupti pariatur commodi est omnis excepturi dignissimos. commodi qui cum tempora ipsa porro quasi quis labore ea cum quod sapiente debitis asperiores. ut qui est ipsa enim numquam odit mollitia. velit earum unde qui animi quod earum repellendus facere aperiam nemo. ipsa praesentium aut quam aperiam qui voluptate&lt;/p&gt;
 </description>
         <pubDate>Sun, 22 Mar 2015 06:57:12 -0400</pubDate>
-        <link>http://localhost:4000/design/2015/03/22/the-start/</link>
-        <guid isPermaLink="true">http://localhost:4000/design/2015/03/22/the-start/</guid>
+        <link>http://www.chuwiey.com/design/2015/03/22/the-start/</link>
+        <guid isPermaLink="true">http://www.chuwiey.com/design/2015/03/22/the-start/</guid>
         
         <category>test</category>
         
