@@ -3422,3 +3422,7 @@ body {
     display: none;
   }
 }
+
+#logo {
+  margin-top: -8px;
+}
