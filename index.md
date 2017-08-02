@@ -5,73 +5,61 @@
 layout: default
 section_id: home
 works:
-  - image: images/@stock/msn-work-1.jpg
-    class: graphic-design
+  - image: images/articles/andrew-neel-117763-350.jpg
+    class: [graphic-design,test-info]
     title: Beautiful Girl
     desc: "Design &amp; Development"
     link: design/2015/03/26/the-start
-  - image: images/@stock/msn-work-2.jpg
+  - image: images/articles/ben-white-131241-700.jpg
     class: web-design print
     title: Look at me
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-3.jpg
+  - image: images/articles/ilya-pavlov-87438-350.jpg
     class: brand wide
     title: Am I cute
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-4.jpg
+  - image: images/articles/jakob-owens-142078-350.jpg
     class: development
     title: Umbrella
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-5.jpg
+  - image: images/articles/jeff-sheldon-264922-350.jpg
     class: print brand
     title: Canned Bros
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-8.jpg
+  - image: images/articles/rick-tap-110126-350.jpg
     class: web-design
     title: Hale
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-6.jpg
+  - image: images/articles/teddy-kelley-181683-350.jpg
     class: web-design wide
     title: A beautiful day
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-7.jpg
-    class: graphic-design
-    title: Flower Book
-    desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-9.jpg
+  - image: images/articles/teddy-kelley-181683-350.jpg
     class: web-design wide
-    title: web-design wide
+    title: A beautiful day
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-10.jpg
-    class: graphic-design
-    title: Flower Book
+  - image: images/articles/jakob-owens-142078-350.jpg
+    class: development
+    title: Umbrella
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-11.jpg
-    class: graphic-design
-    title: Flower Book
+  - image: images/articles/jeff-sheldon-264922-350.jpg
+    class: print brand
+    title: Canned Bros
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-12.jpg
-    class: graphic-design
-    title: Flower Book
+  - image: images/articles/rick-tap-110126-350.jpg
+    class: web-design
+    title: Hale
     desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-13.jpg
-    class: graphic-design
-    title: Flower Book
-    desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-14.jpg
-    class: graphic-design
-    title: Flower Book
-    desc: "Design &amp; Development"
-  - image: images/@stock/msn-work-15.jpg
-    class: graphic-design
-    title: Flower Book
+  - image: images/articles/teddy-kelley-181683-350.jpg
+    class: web-design wide
+    title: A beautiful day
     desc: "Design &amp; Development"
 ---
 
 <div class='mod modMasonryGallery'>
   <ul class='gallery'>
     {% for work in page.works %}
-      <li class='{{work.class}}'>
+      <li class="item">
         <a href='{{work.link}}'>
           <img alt="" src="{{work.image}}" />
           <div class='overlay'>
@@ -81,6 +69,13 @@ works:
             </div>
           </div>
         </a>
+        <div class="md-chips">
+			{% for category in work.class %}
+			<div class="md-chip">
+				{{category}}
+			</div>
+			{% endfor %}
+		</div>
       </li>
     {% endfor %}
   </ul>
