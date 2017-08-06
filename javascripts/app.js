@@ -87,28 +87,44 @@ jQuery(document).foundation();
       }
     });
 
-    if($('.masonry-container').length > 0) {
+    if($('.grid').length > 0) {
 
-      $('.masonry-container').each(function() {
-        var that = $(this);
+      $('.grid').each(function() {
+        // var that = $(this);
 
-        // initialize Masonry after all images have loaded
-        $(that).imagesLoaded(function() {
+        // // initialize Masonry after all images have loaded
+        // $(that).imagesLoaded(function() {
 
-          setTimeout(function() {
-            window.msnry = new Masonry($(that)[0], {
-              itemSelector: '.mod',
-              // columnWidth: '.mod',
-              gutter: 30
-            });
+        //   setTimeout(function() {
+        //     window.msnry = new Masonry($(that)[0], {
+        //       itemSelector: '.mod',
+        //       // columnWidth: '.mod',
+        //       gutter: 30
+        //     });
 
-            // window.msnry.layout();
+        //     // window.msnry.layout();
 
-          }, 10);
+        //   }, 10);
 
+        var $grid = $('.grid').isotope({
+          // set itemSelector so .grid-sizer is not used in layout
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          masonry: {
+            // use element for option
+            columnWidth: '.grid-sizer',
+            gutter: 0
+          }
+        });
+        console.log("set isotope");
+        window.g = $grid;
+        // layout Isotope after each image loads
+        $grid.imagesLoaded().progress( function() {
+          $grid.isotope('layout');
         });
 
       });
+
     }
 
 
